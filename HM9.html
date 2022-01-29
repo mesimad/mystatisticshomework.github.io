@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Statistics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="blog-nav">
+          <a class="blog-nav-item active" href="index.html">Home</a>
+          <a class="blog-nav-item" href="https://www.datatime.eu/public/cybersecurity/">About</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="container">
+                <div class="blog-header">
+                <h1 class="blog-title text-center">Statistics Homework</h1>
+                <p class="lead blog-description"></p>
+    </div>
+    
+                <div class="row">
+                <div class="col-sm-8 blog-main">
+                <div class="blog-post">
+    
+<h2 class="blog-post-title">Homework Nine</h2>
+                <p class="blog-post-meta"> by <a href="https://www.linkedin.com/in/babasimaad/">Baba Simad</a></p>
+                            
+<h2>Research 12_R:</h2>
+
+                        <p><b>"What is the “Brownian motion” and what is a Wiener process. History, importance, definition and applications (Bachelier, Wiener, Einstein, …)."</p></b>
+                        <br>
+                        <p>What is the Brownian motion:
+                        <p>The Brownian motion is the random motion of particles suspended in a medium (a liquid or a gas).
+                        <p>This pattern of motion describes a fluid at thermal equilibrium, defined by a given temperature. Within such a fluid, there exists no preferential direction of flow.
+                        <p>The many-body interactions that yield the Brownian pattern cannot be solved by a model accounting for every involved molecule. In consequence, only probabilistic models applied to molecular populations can be employed to describe it. For example, one such model that belongs to statistical mechanics is due to Einstein.
+                        <p>Another, pure probabilistic class of models is the class of the stochastic process models. There exist sequences of both simpler and more complicated stochastic processes which converge (in the limit) to Brownian motion.
+                        <br>
+                        <p>What is the Wiener process:
+                        <p>In mathematics, the Wiener process is a real valued continuous-time stochastic process named in honor of American mathematician Norbert Wiener for his investigations on the mathematical properties of the one-dimensional Brownian motion.
+                        <p>It is often also called Brownian motion due to its historical connection with the physical process. In fact, in mathematics, the Wiener process describes the Brownian motion.
+                        <p>It is one of the best known Lévy processes and occurs frequently in pure and applied mathematics, economics, quantitative finance, evolutionary biology, and physics.
+                        <br>    
+                        <p>Definition:
+                        <p>The Wiener process Wₜ is characterised by the following properties:
+                        <p>1. W₀ = 0
+                        <p>2. W has indepent increments: for every t > 0, the future increments Wₜ₊ᵤ - Wₜ, u >= 0, are independent of the past values Wₛ, s <= t.
+                        <p>3. W has Gaussian increments: Wₜ₊ᵤ - Wₜ is normally distributed with mean 0 and variance u, Wₜ₊ᵤ - Wₜ = N(0,u)
+                        <p>4. W has continouous paths: Wₜ is continuous in t.
+                        <p>The Wiener process can be constructed as the scaling limit of a random walk, or other discrete-time stochastic processes with stationary independent increments. This is known as Donsker’s theorem.
+                        <br>   
+                        <p>History:
+                        <p>The term Brownian motion derives from Robert Brown, who observed it in 1827 while he was studying at the microscope the pollen particles of Pulchella clarkia in the water: he pointed out that the particles were in a continuous motion and that in each moment that motion was evolving in random directions, although he was not able to explain the cause of the phenomenum.</p>
+                        <p>The first person to describe the mathematics behind Brownian motion was Thorvald N. Thiele in a paper on the method of least squares published in 1880. This was followed independently by Louis Bachelier in 1900 in his PhD thesis “The theory of speculation”, in which he presented a stochastic analysis of the stock and option markets.</p>
+                        <p>In 1905 Albert Einstein published an article explaining the reason of the Brownian motion, which is caused by the hits between the pollen particles and the water molecules, moved at their own by the thermal energy.</p>
+                        <p>In 1913 J. B. Perrin contributed to spread the new theory about the atomic structure of the matter, proved by the Brownian motion itself (for this and other results Perrin won the Nobel prize in 1926).</p>
+                        <p>ther developments have been carried out by M. Smoluchowski and P. Langevin, who contributed by studying stochastic processes and stochastic differential equations.</p>
+                        <p>n 1923 N. Wiener contributed with one of the most important developments of the Brownian motion about mathematics.</p>
+                        <br>
+
+<h3>Bibliography:</h3>
+
+                <p class="blog-post-meta"> [1] <a href="]https://en.wikipedia.org/wiki/Brownian_motion">]https://en.wikipedia.org/wiki/Brownian_motion/</a></p>
+                <p class="blog-post-meta"> [2] <a href="]https://en.wikipedia.org/wiki/Brownian_motion">]https://en.wikipedia.org/wiki/Brownian_motion/</a></p>
+                <br>
+    
+
+<h2>Research 13_R:</h2>
+
+                <p><b>"An “analog” of the CLT for stochastic process: the standard Wiener process as “scaling limit” of a random walk and the functional CLT (Donsker theorem) or invariance principle. Explain the intuitive meaning of this result and how you have already illustrated the result in your homework."</p></b>
+                <br>
+                <p>One of the many reasons that Brownian motion is important in probability theory is that it is a limit of rescaled simple random walks. Let ξ1,ξ2,… be a sequence of independent, identically distributed random variables with mean 0 and variance 1. For each n ≥ 1 define a continuous–time stochastic process {Wn(t)}t≥0 by
+                <p>Wn(t) = (1 / √n) ∑{1≤j≤ ⌊nt⌋} ξj
+                <p>This is a random step function with jumps of size ±1/√n at times k/n, where k ∈ Z+. Since the random variables ξj are independent, the increments of Wn(t) are independent. Moreover, for large n the distribution of Wn(t + s) −Wn(s) is close to the NORMAL(0,t) distribution, by the Central Limit theorem. Thus, it requires only a small leap of faith to believe that, as n → ∞, the 1 distribution of the random function Wn(t) approaches (in a certain sense)1 that of a standard Brownian motion.
+                <p>It’s very important because it explains, at least in part, why the Wiener process arises so commonly in nature. Many stochastic processes behave, at least for long stretches of time, like random walks with small but frequent jumps. The argument above suggests that such processes will look, at least approximately, and on the appropriate time scale, like Brownian motion.
+                <p>Second, it suggests that many important “statistics” of the random walk will have limiting distributions, and that the limiting distributions will be the distributions of the corresponding statistics of Brownian motion. The simplest instance of this principle is the central limit theorem: the distribution of Wn(1) is, for large n close to that of W (1) (the gaussian distribution with mean 0 and variance 1). Other important instances do not follow so easily from the central limit theorem.</p>
+                <br>
+
+
+<h3>Bibliography:</h3>
+
+                 <p class="blog-post-meta"> [1] <a href="https://en.wikipedia.org/wiki/Brownian_motion">https://en.wikipedia.org/wiki/Brownian_motion/</a></p>
+                 <p class="blog-post-meta"> [2] <a href="https://en.wikipedia.org/wiki/Wiener_process">https://en.wikipedia.org/wiki/Wiener_process/</a></p>
+                 <br>
+
+
+<h3>Application 12_A:</h3>
+
+                  <p><b>"Discover one of the most important stochastic process by yourself !
+                  <p>Consider the general scheme we have used so far to simulate stochastic processes (such as the relative frequency of success in a sequence of trials, the sample mean, the random walk, the Poisson point process, etc.) and now add this new process to our simulator.
+                  <p>Starting from value 0 at time 0, for each of m paths, at each new time compute P(t) = P(t-1) + Random step(t), for t = 1, …, n,
+                  <p>where the Random step(t) is now:
+                  <p>σ * sqrt(1/n) * Z(t),
+                  <p>where Z(t) is a N(0,1) random variable (the “diffusion” σ is a user parameter, to scale the process dispersion).
+                  <p>At time n (last time) and one (or more) other chosen inner time 1 less than j less than n (j is a program parameter) create and represent with histogram the distribution of P(t). Observe the behavior of the process for large n </p></b>
+                  <p class="blog-post-meta"> Project: <a href="https://drive.google.com/drive/folders/1p4T0HWMbvhd7n6fHQrLdzpFVx7iyYGO7?usp=sharing">Click here.</a></p>
+                  <br>
+                  
+<h3>Video:</h3>
+                      
+                          <br>
+                          <div class="embed-responsive embed-responsive-16by9">
+                          <iframe class="embed-responsive-item" src="HW12A.mp4" allowfullscreen></iframe>
+                          </div> 
+                          <br> 
+
+<h3>Application 13_A:</h3>
+
+                  <p><b>"Create the a distribution representation (histogram, or CDF …) to represent the following:
+                  <p>- Realizations taken from a Normal(0,1)
+                  <p>- Realizations of the mean, obtained by averaging several times (say m times, m large) n of the above realizations
+                  <p>- Realizations of the variance, obtained by averaging several times (say m times, m large) n of the above realizations
+                  <p>- Realizations taken from exp(N(0,1)))
+                  <p>- Realizations taken from N(0,1) squared
+                  <p>- Realizations taken from a (squared N(0,1)) divided by another (squared N(0,1))"</p></b>
+                  <p class="blog-post-meta"> Project: <a href="https://drive.google.com/drive/folders/1Kp3CQONTVWuxQuIbQhj6drTnKJ9SAU_p?usp=sharing">Click here.</a></p>
+                  <br>
+       
+<h3>Video:</h3>
+    
+        <br>
+        <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="HW13A.mp4" allowfullscreen></iframe>
+        </div> 
+        <br> 
+
+
+<h2>Research 9_RA:</h2>
+
+                   <p><b>"Try to find on the web what are the names of the random variables that you just simulated in the applications, and see if the means and variances that you obtain in the simulation are compatible with the “theory”. If not fix the possible bugs."</p></b>
+                   <br>
+                   <p>Below are listed the names and characteristics of the variables we have computed in the 13_A application.
+                   <p>Since in the application mentioned above are already plotted the theoretical mean and variance of each distribution, it’s possible to see that the empirical variances and means obtained are all around the theoretical value. So, it’s safe to say that the computation of the distributions has not errors.
+                   <br>
+                   <p>We have plotted the following distributions:
+                   <p>1- exp(N(0,1)) is a log-normal distribution with μ=0 and σ=1.
+                   <p>2- N(0,1) squared is a chi-squared distribution with k=1.
+                   <p>3- A N(0,1) squared divided by another N(0,1) squared is called Beta-prime distribution.
+                   <p>Those distributions are explained below.
+                    <br>
+                   <p>Log-normal distribution:
+                   <br>   
+                   <p>A log-normal distribution is a continuous probability distribution of a random variable whose logarithm is normally distributed.
+                   <p>Thus, if the random variable X is log-normally distributed, then Y = ln(X) has a normal distribution. Equivalently, if Y has a normal distribution, then the exponential function of Y, X = exp(Y), has a log-normal distribution.
+                   <p>A random variable which is log-normally distributed takes only positive real values.
+                   <p> Generation and parameters:
+                   <br>    
+                   <p> Let Z be a standard normal variable, and let μ and σ>0 be two real numbers. Then, the distribution of the random variable:
+                   <br> 
+                   <img src="/Users/er/Desktop/Stat/img21.jpg" class="img-fluid" alt="Responsive image" width="300" height="100">
+                   <p>is called the log-normal distribution with parameters μ and σ.
+                   <p>The mean of this distribution is:
+                   <br>
+                   <img src="/Users/er/Desktop/Stat/img22.jpg" class="img-fluid" alt="Responsive image" width="300" height="100">
+                   <p>The variance is:
+                  <br>
+                   <img src="/Users/er/Desktop/Stat/img23.jpg" class="img-fluid" alt="Responsive image" width="300" height="100">
+                   <p>Chi-squared distribution:
+                   <br>
+                   <p>The chi-squared distribution with k degrees of freedom is the distribution of a sum of the squares of k independent standard normal random variables.
+                   <p>Generation and parameters:
+                   <p>If Z1, …, Zk are independent, standard normal random variables, then the sum of their squares,
+                   <br>
+                   <img src="/Users/er/Desktop/Stat/img24.jpg" class="img-fluid" alt="Responsive image" width="300" height="100">
+                   <p>is distributed according to the chi-squared distribution with k degrees of freedom.
+                   <p>The chi-squared distribution has one parameter: a positive integer k that specifies the number of degrees of freedom (the number of random variables being summed).
+                   <p>The mean of the distribution is k.
+                   <p>The variance of the distribution is 2k.
+                   <p>Beta-prime distribution
+                   <p>The beta prime distribution is an absolutely continuous probability distribution.
+                   <p>Generation and parameters
+                   <p>The beta-prime distribution has two parameters: α > 0 and β > 0.
+                   <p>The formula for the mean of the distribution is
+                   <img src="/Users/er/Desktop/Stat/img25.jpg" class="img-fluid" alt="Responsive image" width="300" height="100">
+                   <p>The formula for the variance of the distribution is
+                   <img src="/Users/er/Desktop/Stat/img26.jpg" class="img-fluid" alt="Responsive image" width="300" height="100">
+                   <br>
+                   <br>
+                   
+<h3>Bibliography:</h3>
+
+                   <p class="blog-post-meta"> [1] <a href="https://en.wikipedia.org/wiki/Log-normal_distribution">https://en.wikipedia.org/wiki/Log-normal_distribution/</a></p>
+                   <p class="blog-post-meta"> [2] <a href="https://en.wikipedia.org/wiki/Chi-squared_distribution">https://en.wikipedia.org/wiki/Chi-squared_distribution/</a></p>
+                   <p class="blog-post-meta"> [3] <a href="https://en.wikipedia.org/wiki/Beta_prime_distribution">https://en.wikipedia.org/wiki/Beta_prime_distribution/</a></p>
+                   <br>
+
+
+          </div>
+          <nav>
+            <ul class="pager">
+              <li><a href="next.html">Previous</a></li>
+              
+            </ul>
+          </nav>
+      
+        </div><!-- /.blog-main -->
+      
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          <div class="sidebar-module sidebar-module-inset">
+            <h4>About</h4>
+            <p>"Prof. Tommaso Gastaldi"
+            <p>"tommaso.gastaldi@gmail.com"</p>
+            <p>Course: STATISTICS SECS-S/01 </p>
+            <p>CFU: 6, Year: 2021-2022
+            <p>Course Program: Topics in Statistics relevant to Cybersecurity: theory and application, with intensive software development (using Visual Studio, C# and/or VB.NET and/or J#). 
+            <p>No previous programming experience needed, but useful.</p>
+          </div>
+          <div class="sidebar-module">
+            <h4>Links</h4>
+            <ol class="list-unstyled">
+              <li><a href="HM1.html">Homework 1</a></li>
+              <li><a href="HM2.html">Homework 2</a></li>
+              <li><a href="HM3.html">Homework 3</a></li>
+              <li><a href="HM4.html">Homework 4</a></li>
+              <li><a href="HM5.html">Homework 5</a></li>
+              <li><a href="HM6.html">Homework 6</a></li>
+              <li><a href="HM7.html">Homework 7</a></li>
+              <li><a href="HM8.html">Homework 8</a></li>
+              <li><a href="HM9.html">Homework 9</a></li>
+            </ol>
+          </div>
+          <div class="sidebar-module">
+            <h4>Elsewhere</h4>
+            <ol class="list-unstyled">
+             
+              <li><a href="https://www.facebook.com/me.simad/">Facebook</a></li>
+              <li><a href="https://www.instagram.com/whosimad/">Instagram</a></li>
+              <li><a href="https://www.linkedin.com/in/babasimaad/">Linkedin</a></li>
+            </ol>
+          </div>
+        </div><!-- /.blog-sidebar -->
+      
+      </div><!-- /.row -->
+      
+      </div><!-- /.container -->
+      
+      <footer class="blog-footer">
+      <p> Website Build by <a href="https://www.instagram.com/whosimad/">Baba Simad</a>.</p>
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+      </footer>
+      
+      
+      <!-- Bootstrap core JavaScript
+      ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+      <script src="../../dist/js/bootstrap.min.js"></script>
+      <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+      <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+      
+      
+      </body>
+      <!-- partial -->
+      <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'></script>
+      <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+      </body>
+      </html>
+      

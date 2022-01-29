@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Statistics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="blog-nav">
+          <a class="blog-nav-item active" href="index.html">Home</a>
+          <a class="blog-nav-item" href="https://www.datatime.eu/public/cybersecurity/">About</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="blog-header">
+            <h1 class="blog-title text-center">Statistics Homework</h1>
+            <p class="lead blog-description"></p>
+          </div>
+    
+          <div class="row">
+    
+         <div class="col-sm-8 blog-main">
+    
+         <div class="blog-post">
+    
+<h2 class="blog-post-title">Homework Six</h2>
+         <p class="blog-post-meta"> by <a href="https://www.linkedin.com/in/babasimaad/">Baba Simad</a></p>
+                            
+<h2>Research 8_R:</h2>
+
+         <p><b>Do a research about the following topics:</p>
+         <p>- The law of large numbers LLN, the various definitions of convergence</p>
+         <p>- The convergence of the Binomial to the normal and Poisson distributions</p>
+         <p>- The central limit theorem [in anticipation of a topic we will study later]</p></b>
+         <br>   
+         <p>The law of large numbers:</p>
+         <p>There are two different versions of the law of large numbers that are described below. They are called the strong law of large numbers and the weak law of large numbers.
+         <p>The weak law of large numbers (also called Khinchin’s law) states that the sample average converges in probability towards the expected value
+         <img src="img4.jpg" class="img-fluid" alt="Responsive image">
+         <p>That is, for any positive number ε,
+         <img src="img5.jpg" class="img-fluid" alt="Responsive image">
+         <p>Interpreting this result, the weak law states that for any nonzero margin specified (ε), no matter how small, with a sufficiently large sample there will be a very high probability that the average of the observations will be close to the expected value; that is, within the margin.
+         <p>The strong law of large numbers (also called Kolmogorov’s law) states that the sample average converges almost surely to the expected value
+         <img src="img6.jpg" class="img-fluid" alt="Responsive image">
+         <p>That is,
+         <img src="img7.jpg" class="img-fluid" alt="Responsive image">
+         <p>What this means is that the probability that, as the number of trials n goes to infinity, the average of the observations converges to the expected value, is equal to one. [1]
+         <p>Convergence of random variables
+         <p>We’ve previously mentioned “converges in probability”, but what that means?
+         <p>In probability theory, there exist several different notions of convergence of random variables.
+         <p>Convergence in distribution:
+         <p>With this mode of convergence, we increasingly expect to see the next outcome in a sequence of random experiments becoming better and better modeled by a given probability distribution.
+         <p>Convergence in distribution is the weakest form of convergence typically discussed, since it is implied by all other types of convergence mentioned in this article. However, convergence in distribution is very frequently used in practice; most often it arises from application of the central limit theorem.
+         <p>Convergence in probability:
+         <p>The basic idea behind this type of convergence is that the probability of an “unusual” outcome becomes smaller and smaller as the sequence progresses.
+         <p>The concept of convergence in probability is used very often in statistics. For example, an estimator is called consistent if it converges in probability to the quantity being estimated. Convergence in probability is also the type of convergence established by the weak law of large numbers.
+         <p>Almost sure convergence:
+         <p>This is the type of stochastic convergence that is most similar to pointwise convergence known from elementary real analysis. [2]
+         <p>This is the type of convergence established by the strong law of large numbers.
+         <p>The convergence of the Binomial to the normal and Poisson distributions
+         <p>Another important application of the theorem is that the binomial and the Poisson distribution can be approximated, for “large numbers”, by a normal distribution. This is a general result, valid for all distributions which have the reproductive property under the sum. Distributions of this kind are the binomial, the Poisson and the X2.
+         <p>Let us go into more detail:
+         <p>X1
+         <p>The reproductive property of the binomial states that if <img src="img8.jpg" class="img-fluid" alt="Responsive image">
+         <p>are n(i) independent variables, each following a binomial distribution of parameter Y = ∑i Xi and p, then their sum n= ∑i ni  also follows a binomial distribution with parameters u = np and p. It is easy to be convinced of this property without any mathematics. Just think of what happens if one tosses bunches of three, of five and of ten coins, and then one considers the global result: a binomial with a large (v) can then always be seen as a sum of many binomials with smaller Y = ∑i Xi. The application of the central limit theorem is straightforward, apart from deciding when the convergence is acceptable. The parameters on which one has to base a judgment are in this case<img src="img9.jpg" class="img-fluid" alt="Responsive image">  
+         <p>and the complementary quantity ~> 10.
+         <p>If they are both <img src="img10.jpg" class="img-fluid" alt="Responsive image">
+         <p>then the approximation starts to be reasonable.
+         <img src="img11.jpg" class="img-fluid" alt="Responsive image">
+         <p>Central limit theorem
+         <p>The central limit theorem states that if you have a population with mean μ and standard deviation σ and take sufficiently large random samples from the population with replacement, then the distribution of the sample means will be approximately normally distributed. This will hold true regardless of whether the source population is normal or skewed, provided the sample size is sufficiently large (usually n > 30). If the population is normal, then the theorem holds true even for samples smaller than 30. In fact, this also holds true even if the population is binomial, provided that min(np, n(1-p))> 5, where n is the sample size and p is the probability of success in the population. This means that we can use the normal probability model to quantify uncertainty when making inferences about a population mean based on the sample mean.
+         <p>For the random samples we take from the population, we can compute the mean of the sample means:
+         <img src="img12.jpg" class="img-fluid" alt="Responsive image">
+         <p>and the standard deviation of the sample means:
+         <img src="img13.jpg" class="img-fluid" alt="Responsive image">
+         <p>In order for the result of the CLT to hold, the sample must be sufficiently large (n > 30). Again, there are two exceptions to this. If the population is normal, then the result holds for samples of any size (i..e, the sampling distribution of the sample means will be approximately normal even for samples of size less than 30)</p>
+         <br>
+
+<h3>Bibliography:</h3>
+
+          <p class="blog-post-meta"> [1] <a href="https://en.wikipedia.org/wiki/Law_of_large_numbers">https://en.wikipedia.org/wiki/Law_of_large_numbers/</a></p>
+          <p class="blog-post-meta"> [2] <a href="https://sphweb.bumc.bu.edu/otlt/mph-modules/bs/bs704_probability/BS704_Probability12.html#headingtaglink_1">https://sphweb.bumc.bu.edu/otlt/mph-modules/bs/bs704_probability/BS704_Probability12.html#headingtaglink_1/</a></p>
+          <p class="blog-post-meta"> [3] <a href="https://en.wikipedia.org/wiki/Convergence_of_random_variables">https://en.wikipedia.org/wiki/Convergence_of_random_variables/</a> </p>
+          <br>
+    
+
+
+<h3>Application 8_A:</h3>
+
+          <p><b>"Generate and represent m “sample paths” of n point each (m, n are program parameters), where each point represents a pair of:</p>
+          <p>time index t, and relative frequency of success f(t),</p>
+          <p>where f(t) is the sum of t Bernoulli random variables with distribution B(x, p) = p^x(1-p)^(1-x) observed at the various times up to t: j=1, …, t..</p>
+          <p>See also what happens if you replace the relative frequency f(t) with the absolute frequency n(t) or by standard relative frequency: (f(t)-p) / sqrt(p(1-p)/t) [ or some “normalized” sum of bernoulli r.v.’s, eg. n(t) / Math.sqrt(t) ]"</p></b>
+          <br>
+          <p>With this program we deal as a core topic with the generation of a path from a sequence of Bernoulli random variables.
+          <p>Each point of the path represents the mean (computed with the Knuth algorithm) of all the sampled Bernoulli variables for that path so far. Inside the viewport, a line is drawn between two points. Also, for each path, we store in two different lists the mean of the first j elements and all the n elements. Each element of the lists is added while we’re computing the path it is related to.
+          <p>Those lists will contain all the points that will be used to draw the two lateral histograms at position j and n (the actual position is scaled accordingly to the size of the viewport).
+          <p>Those lists will also be used to compute the absolute and relative frequencies of the points falling into the range.
+          <p>Finally, we display the theoretical probability and the range with appropriate lines.</p>
+          <p class="blog-post-meta"> Project: <a href="https://drive.google.com/drive/folders/1uQ_-163sLZgiNJgc51J1EiGiVIvalyoI?usp=sharing">Click here.</a></p>
+        <br>
+<h3>Video:</h3>
+    
+        <br>
+        <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="HW8A.mp4" allowfullscreen></iframe>
+        </div> 
+        <br> 
+        
+        
+<h3>Research 6_RA:</h2>
+
+          <p><b>"Do a web research about the various methods proposed to compute the running median (one pass, online algorithms).
+          <p>Store (cite all sources and attributions) the algorithm(s) that you think is(are) a good candidate, explaining briefly how it works"</p></b>
+          <br>
+    
+          <p>We’re interested in finding an efficient algorithm for the computation of the running median (i.e. where new data comes in a stream).</p>
+          <p>The naive approach in computing the running median makes use of a sorted array to store all the observations. To retrieve the median, we simply check for the element at position n/2.
+          <p>While being intuitive, this approach is particularly bad since, for each new element added into the array, we need to sort the entire array again.
+          <p>Another approach would be to use an unsorted array and running the quickselect algorithm, which allows us to efficiently find the k-th smallest element in our array.
+          <p>This algorithm can make sense in some applications, especially where we have to compute the median statically; however it is still a bad solution for our setting: we are essentially throwing away all the work done with previous computations of the same algorithm each time a new element is added.
+          <p>Note also that using intrinsecally static structures as array requires even more performance overhead: upon the insertion of new elements, we might have to resize our array dynamically. If there is no enough contiguous memory at the end of our array, we need to copy everything stored so far into a new location.
+          <p>We could change our data structure and move to lists. By using a pointer to the middle of the structure, we are able to find the median after each insertion in O(1). Each insertion takes O(n). This is already a good solution, as we’re now able to keep an ordered structure of our data dynamically by also using what we’ve previously done, and it is also a really intuitive online algorithm. A demonstration of this approach can be found in the computation of quartiles in later versions of the StatApp.
+          <p>We can also improve the performance of the insertion of new elements.
+          <p>We could use a combination of a min-heap with a max-heap. Those data structures have the following properties:
+          <p>the min-heap property: the value of each node is greater than or equal to the value of its parent, with the minimum-value element at the root.
+          <p>the max-heap property: the value of each node is less than or equal to the value of its parent, with the maximum-value element at the root.
+          <p>With a combination of the two, we can keep our current median element to be on top of one of the heaps after each insertion (while keeping them balanced), granting us access to it with complexity O(1) after each insertion as before. But insertion would only take O(log n)!
+          <br>
+          <br>
+
+<h3>Bibliography:</h3>
+
+          <p class="blog-post-meta"> [1] <a href="https://www.youtube.com/watch?v=EIm2n8iPA4I&t=174s">https://www.youtube.com/watch?v=EIm2n8iPA4I&t=174s/</a></p>
+          <p class="blog-post-meta"> [2] <a href="https://stats.stackexchange.com/questions/134/algorithms-to-compute-the-running-median">https://stats.stackexchange.com/questions/134/algorithms-to-compute-the-running-median/</a></p>
+          <p class="blog-post-meta"> [3] <a href="http://www.dsalgo.com/2013/02/RunningMedian.php.html">http://www.dsalgo.com/2013/02/RunningMedian.php.html/</a> </p>
+          <br>
+
+          </div>
+        
+          <nav>
+            <ul class="pager">
+              <li><a href="next.html">Previous</a></li>
+              
+            </ul>
+          </nav>
+      
+        </div><!-- /.blog-main -->
+      
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          <div class="sidebar-module sidebar-module-inset">
+            <h4>About</h4>
+            <p>"Prof. Tommaso Gastaldi"
+            <p>"tommaso.gastaldi@gmail.com"</p>
+            <p>Course: STATISTICS SECS-S/01 </p>
+            <p>CFU: 6, Year: 2021-2022
+            <p>Course Program: Topics in Statistics relevant to Cybersecurity: theory and application, with intensive software development (using Visual Studio, C# and/or VB.NET and/or J#). 
+            <p>No previous programming experience needed, but useful.</p>
+          </div>
+          <div class="sidebar-module">
+            <h4>Links</h4>
+            <ol class="list-unstyled">
+              <li><a href="HM1.html">Homework 1</a></li>
+              <li><a href="HM2.html">Homework 2</a></li>
+              <li><a href="HM3.html">Homework 3</a></li>
+              <li><a href="HM4.html">Homework 4</a></li>
+              <li><a href="HM5.html">Homework 5</a></li>
+              <li><a href="HM6.html">Homework 6</a></li>
+              <li><a href="HM7.html">Homework 7</a></li>
+              <li><a href="HM8.html">Homework 8</a></li>
+              <li><a href="HM9.html">Homework 9</a></li>
+            </ol>
+          </div>
+          <div class="sidebar-module">
+            <h4>Elsewhere</h4>
+            <ol class="list-unstyled">
+             
+              <li><a href="https://www.facebook.com/me.simad/">Facebook</a></li>
+              <li><a href="https://www.instagram.com/whosimad/">Instagram</a></li>
+              <li><a href="https://www.linkedin.com/in/babasimaad/">Linkedin</a></li>
+            </ol>
+          </div>
+        </div><!-- /.blog-sidebar -->
+      
+      </div><!-- /.row -->
+      
+      </div><!-- /.container -->
+      
+      <footer class="blog-footer">
+      <p> Website Build by <a href="https://www.instagram.com/whosimad/">Baba Simad</a>.</p>
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+      </footer>
+      
+      
+      <!-- Bootstrap core JavaScript
+      ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+      <script src="../../dist/js/bootstrap.min.js"></script>
+      <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+      <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+      
+      
+      </body>
+      <!-- partial -->
+      <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'></script>
+      <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+      </body>
+      </html>
+      

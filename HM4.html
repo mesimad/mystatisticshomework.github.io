@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Statistics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="blog-nav">
+          <a class="blog-nav-item active" href="index.html">Home</a>
+          <a class="blog-nav-item" href="https://www.datatime.eu/public/cybersecurity/">About</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="container">
+            <div class="blog-header">
+            <h1 class="blog-title text-center">Statistics Homework</h1>
+            <p class="lead blog-description"></p>
+    </div>
+    
+    <div class="row">
+    
+           <div class="col-sm-8 blog-main">
+           <div class="blog-post">
+            <div class="blog-post">
+            <h2 class="blog-post-title">Homework Four</h2>
+            <p class="blog-post-meta"> by <a href="https://www.linkedin.com/in/babasimaad/">Baba Simad</a></p>
+
+    <h2>Research 5_R:</h2>
+            <p><b>"Explain a possibly unified conceptual framework to obtain all most common measures of central tendency and of dispersion using the concept of distance (or "premetric", or similarity in general). Discuss why it is useful to discuss these concepts introducing the notion of distance. Finally, point out the difference between the mathematical definition of "distance" and the properties of the "premetrics" useful in statistics, pointing out trhe most important distances, indexes and similarity measures used in statistics, data analysis and machine learning (such as for instance; Mahalanobis distance, Euclidean distance, Minkowski distance, Manhattan distance, Hamming distance, Cosine distance, Chebishev distance, Jaccard index, Haversine distance, Sørensen-Dice index, etc.)."</p></b>
+            <p>The measures of central tendency are part of so called Summary Statistics. These measures identify a single value as representative of an entire distribution. This single value is chosen considering the concept of distance or, more generally, premetric.
+            <p>For example, the arithmetic mean, which is a measure of central tendency, chooses as summary value the one that minimizes the sum of squared deviations from all the values of a dataset relatively to a variable, in symbols: d(xᵢ, x̄)². In this case the distance is defined as follow:
+            <br>d(xᵢ, x̄) = xᵢ-x̄, 
+            <br>where x̄ is the arithmetic mean.
+            <p>  So to obtain a measure of central tendency, first of all, it’s needed to define what we mean with distance, so we need to say what is the so-called distance function. After that, we need to decide what property we want to satisfy with the summary value relatively to the distance.
+            <p>Let’s now see this conceptual procedure to define the median.
+            <p>It is the value separating the higher half from the lower half of the values of a variable.
+            <br>In the sequence 1, 3, 3, 6, 7, 8, 9 the median is 6. To obtain it the sequence of the values must be ordered.
+            <br>This value can be defined considering the distance as the one that minimizes the sum of d(xᵢ, M) where M is the median and the distance is defined, equally to the arithmetic mean, as:
+            <br>d(xᵢ, M) = xᵢ-M
+            <p>It’s useful to introduce these measures using distances because the measures of central tendency summarize a distribution considering the location of the values of a dataset or of a variable. The location of points can be defined as a distance from a point in the space. In these measures, this point is the one that satisfies some properties we decided.
+            <br> In this way it’s possible to define an infinite amount of measures of central tendency just by modifying the definition of distance and the properties to satisfy, this allows to use a summary value that fits the most our purpose.</p>
+            
+            <p>*Distance in Mathematics and Statistics: </p>
+            <p>Distance is a numerical measurement of how far apart objects or points are. In physics or everyday usage, distance may refer to a physical length or an estimation based on other criteria (e.g. “two counties over”). The distance from a point A to a point B is sometimes denoted as |AB|.</p>
+            <p>In analytic geometry, the Euclidean distance between two points of the xy-plane can be found using the distance formula</p>
+            <p>This is a metric often used in computer vision that can be minimized by least squares estimation</p>
+            <p>In statistics and information geometry, there are many kinds of statistical distances, notably divergences, especially Bregman divergences and f-divergences. These include and generalize many of the notions of “difference between two probability distributions”, and allow them to be studied geometrically, as statistical manifolds. The most elementary is the squared Euclidean distance, which forms the basis of least squares; this is the most basic Bregman divergence. The most important in information theory is the relative entropy (Kullback–Leibler divergence), which allows one to analogously study maximum likelihood estimation geometrically; this is the most basic f-divergence, and is also a Bregman divergence (and is the only divergence that is both). Statistical manifolds corresponding to Bregman divergences are flat manifolds in the corresponding geometry, allowing an analog of the Pythagorean theorem (which is traditionally true for squared Euclidean distance) to be used for linear inverse problems in inference by optimization theory.</p>
+            <p>Other important statistical distances include the Mahalanobis distance, the energy distance, and many others.</p>
+            <p>Premetrics:</p>
+            <p>Premetrics is a function which satisfies the following conditions:</p>
+            <p>d(x, y) ≥ 0</p>
+            <p>d(x, x) = 0</p>
+            <p>This is not a standard term. Sometimes it is used to refer to other generalizations of metrics such as pseudosemimetrics or pseudometrics.</p>
+    
+     <h3>Bibliography:</h3>
+
+            <p class="blog-post-meta"> [1] <a href="https://en.wikipedia.org/wiki/Metric_(mathematics)#Premetrics/">https://en.wikipedia.org/wiki/Metric_(mathematics)#Premetrics/</a></p>
+            <p class="blog-post-meta"> [2] <a href="https://en.wikipedia.org/wiki/Arithmetic_mean#Motivating_properties/"> https://en.wikipedia.org/wiki/Arithmetic_mean#Motivating_properties/</a></p>
+            <p class="blog-post-meta"> [3] <a href="https://en.wikipedia.org/wiki/Median/">https://en.wikipedia.org/wiki/Median/</a></p>
+
+
+      <h3>Application 6_A:</h3>
+                            
+            <p><b>"Prepare separately the following charts: 1) Scatterplot, 2) Histogram/Column chart [in the histogram, within each class interval, draw also a vertical colored line where lies the true mean of the observations falling in that class] and 3) Contingency table, using the graphics object and its methods (Drawstring(), MeasureString(), DrawLine(), etc).</p>
+              Use them to represent 2 numerical variables that you select from a CSV file. In particular, in the same picture box, you will make at least 2 separate charts: 1 dynamic rectangle will contain the contingency table, and 1 rectangle (chart) will contain the scatterplot, with the histograms/column charts and rug plots drawn respectively near the two axis (and oriented accordingly)."</p></b>
+            <p class="blog-post-meta"> Project:<a href="https://drive.google.com/drive/folders/1Bkscek2Nt3Wmxs2_O6vCfm2XjXw-TSI4?usp=sharing">Click here.</a></p>
+            <br>
+
+       <h3>Video:</h3>
+    
+            <br>
+            <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="HW6A.mp4" allowfullscreen></iframe>
+            </div> 
+            <br>   
+            
+            <h3>Video:</h3>
+    
+            <br>
+            <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="HW6AA.mp4" allowfullscreen></iframe>
+            </div> 
+            <br>   
+
+      <h3> Research About Application 4_RA:</h3>
+          
+            <p><b>Do a personal research about the real world window to viewport transformation, and note separately the formulas and code which can be useful for your present and future applications.</p></b>
+            <p>When we want to represent a point in the real world window in a viewport, it has to undergo a transformation process.
+              The coordinates of the point must be “reflected” and proportional to the size of the viewport in which we want to put it.
+              We have studied three methods to do this:
+              manually code the transform
+              using the Graphics object
+              using the transform matrix
+              In particular, this is the formula, that is also considered a pseudo-codice, for the manual transformation of coordinates.</p>
+            <p>Legenda:</p>
+            <p> x = the transformed coordinate x ready for the viewport</p>
+            <p> y = the transformed coordinate y ready for the viewport</p>
+            <p>L = the space between the (0,0) point of the viewport and the x-axis from the left</p>
+            <p>T = the space between the (0,0) point of the viewport and the y-axis from the top</p>
+            <p>H = the height of the viewport</p>
+            <p>W = the width of the viewport</p>
+            <p>X = the x coordinate in the real world window</p>
+            <p>Y = the y coordinate in the real world window</p>
+            <p>MinX = the minimum value of x in the real world window</p>
+            <p> MinY = the minimum value of y in the real world window</p>
+            <p>Rx = the range of x in the real world window</p>
+            <p>Ry = the range of y in the real world window</p>
+            <p>The transformation using the Graphics object involves different functions as ScaleTransform() and Translate().</p>
+            <p>Finally, the transformation using the matrix can be seen as the multiplication of several matrices, each of which performs a task.</p>
+      
+          </div>
+        </div>
+        <nav>
+          <ul class="pager">
+            <li><a href="index.html">Previous</a></li>
+            
+          </ul>
+        </nav>
+    
+      </div><!-- /.blog-main -->
+    
+      <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+        <div class="sidebar-module sidebar-module-inset">
+          <h4>About</h4>
+          <p>"Prof. Tommaso Gastaldi"
+          <p>"tommaso.gastaldi@gmail.com"</p>
+          <p>Course: STATISTICS SECS-S/01 </p>
+          <p>CFU: 6, Year: 2021-2022
+          <p>Course Program: Topics in Statistics relevant to Cybersecurity: theory and application, with intensive software development (using Visual Studio, C# and/or VB.NET and/or J#). 
+          <p>No previous programming experience needed, but useful.</p>
+        </div>
+        <div class="sidebar-module">
+          <h4>Links</h4>
+          <ol class="list-unstyled">
+            <li><a href="HM1.html">Homework 1</a></li>
+            <li><a href="HM2.html">Homework 2</a></li>
+            <li><a href="HM3.html">Homework 3</a></li>
+            <li><a href="HM4.html">Homework 4</a></li>
+            <li><a href="HM5.html">Homework 5</a></li>
+            <li><a href="HM6.html">Homework 6</a></li>
+            <li><a href="HM7.html">Homework 7</a></li>
+            <li><a href="HM8.html">Homework 8</a></li>
+            <li><a href="HM9.html">Homework 9</a></li>
+          </ol>
+        </div>
+        <div class="sidebar-module">
+          <h4>Elsewhere</h4>
+          <ol class="list-unstyled">
+           
+            <li><a href="https://www.facebook.com/me.simad/">Facebook</a></li>
+            <li><a href="https://www.instagram.com/whosimad/">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/in/babasimaad/">Linkedin</a></li>
+          </ol>
+        </div>
+      </div><!-- /.blog-sidebar -->
+    
+    </div><!-- /.row -->
+    
+    </div><!-- /.container -->
+    
+    <footer class="blog-footer">
+    <p> Website Build by <a href="https://www.instagram.com/whosimad/">Baba Simad</a>.</p>
+    <p>
+      <a href="#">Back to top</a>
+    </p>
+    </footer>
+    
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    
+    
+    </body>
+    <!-- partial -->
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+    </body>
+    </html>
+    
